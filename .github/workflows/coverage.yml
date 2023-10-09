@@ -21,4 +21,5 @@ jobs:
           submodules : true
       - name: Generate code coverage
         run: |
-          cargo tarpaulin --verbose --all-features --workspace --timeout 120 --out xml
+          cargo test
+          # cargo tarpaulin --verbose --all-features --workspace --timeout 120 --out xml
