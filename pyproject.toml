@@ -5,11 +5,9 @@ build-backend = "maturin"
 [project]
 name = "pyo3-test"
 classifiers = [
-    "Programming Language :: Rust",
-    "Programming Language :: Python :: Implementation :: CPython",
-    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Rust"
 ]
 
-
 [tool.maturin]
-bindings = "bin"
+features = ["pyo3", "pyo3/extension-module"]
+
